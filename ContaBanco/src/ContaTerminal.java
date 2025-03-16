@@ -16,10 +16,10 @@ public class ContaTerminal {
         double saldo = scanner.nextDouble();
 
         System.out.println("Por favor, digite o nome do Cliente:");
-        scanner.nextLine();
+        scanner.nextLine(); // Para limpar a linha que ficou no buffer após o nextDouble
         String nomeCliente = scanner.nextLine();
 
-        // Exibindo os dados do exercicio
+        // Exibindo os dados formatados
         System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco. Sua agência é "
                 + agencia + ", conta " + conta + " e seu saldo de " + saldo + " já está disponível para saque.");
 
